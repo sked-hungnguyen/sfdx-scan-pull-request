@@ -83,5 +83,6 @@ export async function registerRule(path: string, language: string) {
     `--path="${path}"`,
     `--language="${language}"`,
     "--json",
+    "--engine cpd",
   ]);
 }
