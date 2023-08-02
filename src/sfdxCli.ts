@@ -75,6 +75,7 @@ export async function scanFiles(scannerFlags: ScannerFlags) {
   return cli<ScannerFinding[] | string>("scanner:run", [
     ...scannerCliArgs,
     "--json",
+    "--engine cpd",
   ]);
 }
 
