@@ -72,7 +72,7 @@ export async function scanFiles(scannerFlags: ScannerFlags) {
     )
     .reduce((acc, [one, two]) => (one && two ? [...acc, one, two] : acc), []);
 
-  return cli<ScannerFinding[] | string>("scanner:run --engine cpd", [
+  return cli<ScannerFinding[] | string>("scanner:run", [
     ...scannerCliArgs,
     "--json",
   ]);
